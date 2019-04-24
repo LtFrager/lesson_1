@@ -3,9 +3,38 @@
 
 /* BODY */
 
+a:hover {
+    text-decoration: none;
+}
+
 .body_bg {
     overflow: hidden;
-    background: url('./img/body-bg.png') repeat;
+    background: url('../img/body-bg.png') repeat;
+}
+
+.white_bg {
+    background: #fff;
+    padding: 35px 20px 0;
+}
+
+.std_text {
+    font-size: 16px;
+    font-family: yandex-sans;
+    margin: 12px 0;
+    color: #464646;
+}
+
+.strong_text {
+    font-size: 16px;
+    font-family: yandex-sans;
+    margin: 18px 0;
+    font-size: 22px;
+    color: #464646;
+    font-weight: 900;
+}
+
+.list_title {
+    font-weight: 700;
 }
 
 
