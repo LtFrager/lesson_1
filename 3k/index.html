@@ -23,49 +23,56 @@
 <body>
     <nav class="my_navbar">
 
+        <div class="my_navbar_navigation_block">
+            <div class="container">
+                <div class="my_navbar_box">
+                    <div class="my_navbar_logo">
+                        <a href="./index.html">
+                            <img src="https://techcrunch.com/wp-content/uploads/2018/07/logo-2.png?w=300" alt="">
+                        </a>
+                    </div>
+                    <div class="my_navbar_items">
+                        <div class="navbar_item"><a href="./company.html">Компания</a></div>
+                        <div class="navbar_item"><a href="./production.html">Продукция</a></div>
+                        <div class="navbar_item"><a href="./coop.html">Сотрудничество</a></div>
+                        <div class="navbar_item"><a href="./our-objects.html">Наши объекты</a></div>
+                        <div class="navbar_item"><a href="./service.html">Сервис</a></div>
+                        <div class="navbar_item"><a href="./contacts.html">Контакты</a></div>
+                    </div>
 
+                    <div class="wrap-search">
+                        <div class="search">
+                            <form action="/" method="post" class="form-inline">
+                                <label for="mod-search-searchword" class="search-icon element-invisible"></label>
+                                <div class="toggle" style="display: block;"><span class="arrow"></span><input name="searchword" id="mod-search-searchword" maxlength="200" class="inputbox search-query" type="search" placeholder="поиск по сайту"></div>
+                                <input type="hidden" name="task" value="search">
+                                <input type="hidden" name="option" value="com_search">
+                                <input type="hidden" name="Itemid" value="130">
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
         <div class="slider">
-            <div class="slider_item" style="background: url(./img/slide2.png) no-repeat bottom right;">
+            <div class="slider_item" style="background-image: url(./img/slide2.png);">
                 <div class="container" style>
                     <div class="slider_content_size">
                         <h1>Внутрипольные конвекторы премиум класса: Абсолютно бесшумные; Повышеная теплоотдача; Европейское качество</h1>
                     </div>
                 </div>
             </div>
-            <div class="slider_item">
-                <h1>Внутрипольные конвекторы премиум класса: Абсолютно бесшумные; Повышеная теплоотдача; Европейское качество</h1>
-            </div>
-            <div class="slider_item">
-                <h1>Внутрипольные конвекторы премиум класса: Абсолютно бесшумные; Повышеная теплоотдача; Европейское качество</h1>
+            <div class="slider_item" style="background-image: url(./img/slide2.png) ;">
+                <div class="container" style>
+                    <div class="slider_content_size">
+                        <h1>Внутрипольные конвекторы премиум класса: Абсолютно бесшумные; Повышеная теплоотдача; Европейское качество</h1>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
-
-    <style type="text/css">
-        .my_navbar {
-            background-image: linear-gradient(to top right, #1d32a8, #b5030a);
-        }
-        
-        .slider_item h1 {
-            background-size: 40%
-        }
-        
-        .slider_item h1 {
-            font-size: 40px;
-            color: #fff;
-            font-family: 'AcromThin', sans-serif;
-            font-weight: 100;
-            text-transform: uppercase;
-            line-height: 50px;
-        }
-        
-        .slider_content_size {
-            max-width: 700px;
-            padding: 105px 0px;
-        }
-    </style>
-
 
     <div class="body_bg">
 

@@ -1,3 +1,49 @@
+.slider {
+    padding-top: 35px;
+}
+
+.slider_item {
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+.slider_item h1 {
+    font-size: 40px;
+    color: #fff;
+    font-family: 'AcromThin', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+.slider_content_size {
+    max-width: 700px;
+    padding: 40px 0px 105px;
+    min-height: 470px;
+}
+
+.slick-dots {
+    bottom: 10px;
+}
+
+.slick-dots li button {
+    background: url('../img/icons/slider_dot.png') no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.slick-dots .slick-active button,
+.slick-dots li:hover button {
+    background: url('../img/icons/slider_dot_hover.png') no-repeat;
+}
+
+
+/* slider end */
+
+
+/* Items */
+
 .link_block_item {
     position: relative;
     margin-bottom: 35px;
