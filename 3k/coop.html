@@ -22,30 +22,67 @@
 
 <body>
     <nav class="my_navbar">
+        <div class="my_navbar_navigation_block">
+            <div class="container">
+                <div class="my_navbar_box">
+                    <div class="my_navbar_logo">
+                        <a href="./index.html">
+                            <img src="https://techcrunch.com/wp-content/uploads/2018/07/logo-2.png?w=300" alt="">
+                        </a>
+                    </div>
 
+                    <div class="my_navbar_items">
+                        <div class="navbar_item"><a href="./company.html">Компания</a></div>
+                        <div class="navbar_item"><a href="./production.html">Продукция</a></div>
+                        <div class="navbar_item"><a href="./coop.html">Сотрудничество</a></div>
+                        <div class="navbar_item"><a href="./our-objects.html">Наши объекты</a></div>
+                        <div class="navbar_item"><a href="./service.html">Сервис</a></div>
+                        <div class="navbar_item"><a href="./contacts.html">Контакты</a></div>
+                    </div>
 
+                    <div class="wrap-search">
+                        <div class="search">
+                            <form action="/" method="post" class="form-inline">
+                                <label for="mod-search-searchword" class="search-icon element-invisible"></label>
+                                <div class="toggle" style="display: block;"><span class="arrow"></span><input name="searchword" id="mod-search-searchword" maxlength="200" class="inputbox search-query" type="search" placeholder="поиск по сайту"></div>
+                                <input type="hidden" name="task" value="search">
+                                <input type="hidden" name="option" value="com_search">
+                                <input type="hidden" name="Itemid" value="130">
+                            </form>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <ul class="my_breadcrumbs">
+                <li>
+                    <a href="/"><span>Главная</span></a>
+                    <span class="divider"></span>
+                </li>
+                <li class="active">
+                    <span class="name">Сотрудничество</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="my_navbar_page_header">
+            <h1>Сотрудничество</h1>
+        </div>
+        <div class="my_navbar_bottom_stuff" style=" min-height: 45px; margin: auto;
+                    background: url(./img/icons/active_menu.png) no-repeat center bottom 20px, url(./img/icons/menu-line2.png) no-repeat center bottom;">
+        </div>
     </nav>
 
-    <style type="text/css">
-        .my_navbar {
-            background-image: linear-gradient(to top right, #1d32a8, #b5030a);
-        }
-    </style>
-
-
     <div class="body_bg">
-
-
-
         <div class="container">
             <div class="white_bg">
                 <p class="std_text">
                     Компания COOLTHERM GROUP приглашает Вас к сотрудничеству. Высокое качество производимого оборудования, реальные технические характеристики и абсолютная бесшумность позволяет нам выстраивать долгосрочное сотрудничество и развивать рекомендательную сеть.
                 </p>
-
                 <p class="std_text"><span class="list_title">Приглашаем к сотрудничеству:</span></p>
-
                 <ul>
                     <li>
                         <p class="std_text">Дизайнеров и архитекторов</p>
@@ -104,7 +141,7 @@
     <footer>
         <div class="footer_map">
             <div class="row">
-                <div class="col col-xs-12">
+                <div class="col">
                     <img class="mob_map" width="100%" src="./img/footer/map.png">
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12 map_contacts_block">
