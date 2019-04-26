@@ -143,19 +143,159 @@
                 <!--row-->
 
 
-                <div id="download-block" class="download-block">
-                    <h2 class="download-title">
-                        Техническая документация </h2>
-                    <div class="scheme">
-                        <div class="element element-download element-downloadpro first last">
-                            <h3>Схемы:</h3><a href="/images/scheme/InstrukciyaVentherm.pdf" title="Инструкция по монтажу" target="_blank">Инструкция по монтажу</a> <a href="/images/scheme/electric.pdf" title="Схема электрического подключения конвектора" target="_blank">Схема электрического подключения конвектора</a>                            <a href="/images/scheme/new/Electric.pdf" title="Схема подключения конвекторов к терморегулятору" target="_blank">Схема подключения конвекторов к терморегулятору</a></div>
-                        <div class="wrap-icon">
-                            <div class="icon"></div>
-                            <div class="border"></div>
+                <div class="blue-block_bg">
+                    <div class="blue-block">
+                        <h2 class="blue-block-title">
+                            Техническая документация </h2>
+                        <div class="scheme">
+                            <div class="element element-download element-downloadpro first last">
+                                <h3>Схемы:</h3>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="wrap-icon">
+                                            <div class="icon"></div>
+                                            <div class="my_border"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6">
+                                        <a href="/images/scheme/InstrukciyaVentherm.pdf" title="Инструкция по монтажу" target="_blank">Инструкция по монтажу</a>
+                                        <a href="/images/scheme/electric.pdf" title="Схема электрического подключения конвектора" target="_blank">Схема
+                                        электрического подключения конвектора</a>
+                                        <a href="/images/scheme/new/Electric.pdf" title="Схема подключения конвекторов к терморегулятору" target="_blank">Схема
+                                        подключения конвекторов к терморегулятору</a>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
+
+                <div class="support">
+                    <h1 class="title">Центр поддержки клиентов</h1>
+                    <p class="sub-title">Вы можете связаться с нами следующими нижеперечисленными способами. Мы максимально быстро ответим на интересующие Вас вопросы</p>
+
+                    <div class="method">
+                        <div class="wrap-icon">
+                            <div class="my-border"></div>
+                            <div class="icon" style="background: url('./img/icons/sup-icon.png') no-repeat center;"></div>
+                        </div>
+                        <p>Отправить <a href="/kontakty#formsupp" class="form">запрос</a> (форма обратной связи)</p>
+                    </div>
+                    <div class="method">
+                        <div class="wrap-icon">
+                            <div class="my-border"></div>
+                            <div class="icon" style="background: url('./img/icons/sup-icon2.png') no-repeat center;"></div>
+                        </div>
+                        <p>Помощь он-лайн консультанта</p>
+                    </div>
+                    <div class="method">
+                        <div class="wrap-icon">
+                            <div class="my-border"></div>
+                            <div class="icon" style="background: url('./img/icons/sup-icon3.png') no-repeat center;"></div>
+                        </div>
+                        <p>По email</p>
+                    </div>
+                    <div class="method">
+                        <div class="wrap-icon">
+                            <div class="my-border"></div>
+                            <div class="icon" style="background: url('./img/icons/sup-icon4.png') no-repeat center;"></div>
+                        </div>
+                        <p>По телефону</p>
+                    </div>
+                    <div class="button"><a href="/kontakty">Наши контакты</a></div>
+                </div>
+
+                <style type="text/css">
+                    .support {
+                        display: flex;
+                        flex-direction: column;
+                        max-width: 840px;
+                        margin: auto;
+                    }
+                    
+                    .support .title {
+                        color: #464646;
+                        font-size: 40px;
+                        text-align: center;
+                        font-family: 'AcromThin', sans-serif;
+                        font-weight: 100;
+                        margin: 55px 0 40px;
+                    }
+                    
+                    .support .sub-title {
+                        font-size: 16px;
+                        color: #464646;
+                        text-align: center;
+                        margin-bottom: 30px;
+                    }
+                    
+                    .support .method {
+                        display: flex;
+                        align-items: center;
+                        margin: 8px 0px;
+                    }
+                    
+                    .support .wrap-icon {
+                        float: left;
+                        position: relative;
+                        width: 57px;
+                        height: 55px;
+                        display: inline-block;
+                        margin-right: 15px;
+                    }
+                    
+                    .support .wrap-icon .icon {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                    }
+                    
+                    .support .wrap-icon .my-border {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        background: url('./img/icons/supp-border.png') no-repeat center;
+                    }
+                    
+                    .support .method p,
+                    {
+                        display: inline-block;
+                        line-height: 55px;
+                        font-size: 16px;
+                        color: #464646;
+                    }
+                    
+                    .support p .form {
+                        color: #044b91;
+                        text-decoration: underline;
+                    }
+                    
+                    .support .button {
+                        width: 200px;
+                        height: 55px;
+                        margin: 25px 0 55px 0;
+                        border: 3px solid #a0afed;
+                        border-radius: 3px;
+                        text-align: center;
+                    }
+                    
+                    .support .button a {
+                        display: block;
+                        height: 100%;
+                        line-height: 55px;
+                        color: #054599;
+                        font-size: 14px;
+                        font-family: 'AcromLight', sans-serif;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                    }
+                </style>
             </div>
         </div>
         <!--container-->
@@ -174,12 +314,12 @@
                     <p>+38 093 967 70 00</p>
                     <p>coolthermgroup@gmail.com</p>
                     <div class="button"><a href="/index.php?option=com_content&amp;view=featured&amp;Itemid=120#formsupp">Напишите
-                            нам</a></div>
+                                нам</a></div>
                     <div class="icons"><span class="f"><a href="https://www.facebook.com/intconua/"
-                                target="_blank"></a></span><span class="v"><a href="http://vk.com/intconua"
-                                target="_blank"></a></span><span class="g"><a
-                                href="https://plus.google.com/u/0/communities/116050942747417315913"
-                                target="_blank"></a></span></div>
+                                    target="_blank"></a></span><span class="v"><a href="http://vk.com/intconua"
+                                    target="_blank"></a></span><span class="g"><a
+                                    href="https://plus.google.com/u/0/communities/116050942747417315913"
+                                    target="_blank"></a></span></div>
                 </div>
             </div>
         </div>

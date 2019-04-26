@@ -43,18 +43,6 @@
     background: url('../img/icons/pusle_border.png') no-repeat center;
 }
 
-@keyframes pulse {
-    from {
-        transform: scale(1)
-    }
-    50% {
-        transform: scale(1.05)
-    }
-    to {
-        transform: scale(1)
-    }
-}
-
 .left-block .wrap-icon .icon {
     position: absolute;
     width: 100%;

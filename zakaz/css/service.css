@@ -1,0 +1,137 @@
+.page_title {
+    margin: 0 0 60px 0;
+    font-family: 'AcromThin', sans-serif;
+    font-size: 44px;
+    color: #464646;
+    text-align: center;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+
+.service_item {
+    position: relative;
+    margin-bottom: 35px;
+    background: #eef3f6;
+    padding: 18px 18px 0;
+}
+
+.service_item:hover {
+    cursor: pointer;
+}
+
+.service_item .item_img {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 150%;
+    background-position: center;
+    background-size: contain;
+}
+
+.service_item .service_title .service_text {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: #464646;
+    font-weight: 100;
+    padding: 14px 70px 8px 30px;
+}
+
+.service_text .service_text_title {
+    font-family: 'AcromMedium', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.service_title {
+    position: relative;
+    min-height: 100px;
+}
+
+@media screen and (max-width:575px) {
+    .service_item .service_title .service_text {
+        font-size: 14px;
+        padding: 8px 32px 8px 12px;
+    }
+}
+
+
+/* blue-block */
+
+.blue-block_bg {
+    position: relative;
+    z-index: 1;
+}
+
+.blue-block_bg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 200%;
+    left: -50%;
+    background: url('../img/icons/bg-scheme.jpg') no-repeat center;
+}
+
+.blue-block {
+    max-width: 840px;
+    margin: auto;
+    padding: 70px 0px;
+}
+
+.blue-block-title {
+    font-size: 40px;
+    color: #fff;
+    font-family: 'AcromThin', sans-serif;
+    text-align: center;
+    margin: 0 0 60px;
+    font-weight: 700;
+}
+
+.blue-block h3 {
+    font-size: 18px;
+    color: #fff;
+    font-family: 'AcromMedium', sans-serif;
+    text-transform: uppercase;
+}
+
+.blue-block .scheme .wrap-icon {
+    position: relative;
+    width: 193px;
+    height: 109px;
+    margin-top: 15px;
+}
+
+.blue-block .scheme .wrap-icon .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../img/icons/scheme.png') no-repeat center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.blue-block .scheme .wrap-icon .my_border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/icons/scheme-mark.png') no-repeat center;
+    animation: pulse 1s 0s linear infinite;
+}
+
+.blue-block a {
+    float: left;
+    background: url('../img/icons/green-dot.png') no-repeat center left;
+    padding: 10px 0 10px 45px;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+}
