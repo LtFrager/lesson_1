@@ -153,6 +153,10 @@ navbar_item {}
 
 /* BODY */
 
+.no-padding {
+    padding: 0px;
+}
+
 a:hover {
     text-decoration: none;
 }
