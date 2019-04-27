@@ -16,6 +16,45 @@ $(document).ready(function($) {
         autoplaySpeed: 2000,
     });
 
+    $('.slider-partners').slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        speed: 1500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+            }
+        }, {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        }, {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }]
+    });
+
+    $('#lightgallery').lightGallery();
+
+    $(function() {
+        // $(".clickable-active").click(function() {
+        //     $(".clickable-active").removeClass("active");
+        //     $(this).toggleClass("active")
+        // });
+    });
+
     $('.mb1').hover(function() {
         $('.block1').css({
             opacity: '1',

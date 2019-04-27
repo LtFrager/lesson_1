@@ -195,8 +195,7 @@
     background: url('../img/icons/supp-border.png') no-repeat center;
 }
 
-.support .method p,
-{
+.support .method p {
     display: inline-block;
     line-height: 55px;
     font-size: 16px;

@@ -186,3 +186,22 @@
     margin: 0;
     padding-bottom: 34px;
 }
+
+
+/* slider */
+
+.slider-partners {
+    padding: 36px 0px;
+}
+
+.slider-partners .slider_item {
+    padding: 16px;
+}
+
+.slider-partners .slider_item a {
+    outline: none;
+}
+
+.slider-partners .slider_item a img {
+    width: 100%;
+}
