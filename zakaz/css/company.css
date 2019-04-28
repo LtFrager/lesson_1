@@ -21,7 +21,7 @@
     font-family: 'AcromThin', sans-serif;
     text-align: center;
     margin: 0;
-    padding: 80px 160px 60px;
+    padding: 80px 20% 60px;
     line-height: 40px;
 }
 
@@ -204,4 +204,11 @@
 
 .slider-partners .slider_item a img {
     width: 100%;
+}
+
+@media screen and (max-width:575px) {
+    .middle-block .title {
+        font-size: 32px;
+        padding: 80px 10px 60px;
+    }
 }
