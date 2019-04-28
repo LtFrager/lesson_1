@@ -46,13 +46,13 @@ $(document).ready(function($) {
         }]
     });
 
-    $('#lightgallery').lightGallery();
+    $('.lightgallery').lightGallery();
 
     $(function() {
-        // $(".clickable-active").click(function() {
-        //     $(".clickable-active").removeClass("active");
-        //     $(this).toggleClass("active")
-        // });
+        $(".clickable-active").click(function() {
+            $(".clickable-active").removeClass("active");
+            $(this).toggleClass("active")
+        });
     });
 
     $('.mb1').hover(function() {
