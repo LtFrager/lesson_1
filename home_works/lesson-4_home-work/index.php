@@ -208,7 +208,7 @@
                             }
                         }
                     ?>
-                <h2>My Form Results</h2>
+                <h2>My Form file input</h2>
                     <form action="" method="POST" enctype="multipart/form-data">
                         <input type="file" name="image" />
                         <input type="submit" />
@@ -223,7 +223,7 @@
                 </div>
 
  <div class="card">
-                    <h3 class="form-title">My form result</h3>
+                    <h3 class="form-title">My Form Results</h3>
                 <div id="result_form"></div>
                     </div>
 
