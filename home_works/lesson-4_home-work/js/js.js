@@ -22,4 +22,5 @@ $(document).ready(function() {
     $('.input_group input, .input_group textarea').on('change keyup', function() {
         checkForInput(this);
     });
+
 });
