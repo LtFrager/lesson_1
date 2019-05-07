@@ -59,6 +59,13 @@
                         </tr>
                     </tbody>
                 </table>
+                <style>
+                td {
+    width: 150px;
+    height: 50px;
+    border: 2px solid;
+}
+                </style>
             </div>
             <!-- col end -->
 
