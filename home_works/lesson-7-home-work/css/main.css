@@ -14,8 +14,8 @@ section {
 }
 
 .my-form {
-    max-width: 540px;
-    margin: -56px;
+    max-width: 440px;
+    margin: -36px;
     padding: 24px;
 }
 
@@ -135,12 +135,20 @@ h1 {
 .ne-style .leaf-border {
     border: 35px solid;
     border-image: url('../img/ne/border.gif') 70 repeat;
+    position: relative;
+    padding: 35px;
 }
 
-.ne-style .leaf-border>div {
-    margin: -35px;
+.ne-style .leaf-border::before {
+    content: "";
+    position: absolute;
+    margin: 0px;
     border: 90px solid;
     border-image: url('../img/ne/corner.gif') 180 repeat;
+    width: calc(100% + 70px);
+    height: calc(100% + 70px);
+    top: -35px;
+    left: -35px;
 }
 
 .ne-style .form-items {
@@ -175,13 +183,21 @@ h1 {
 
 .orc-style .leaf-border {
     border: 35px solid;
-    border-image: url('../img/orc/border0.gif') 70 repeat;
+    border-image: url('../img/orc/border.gif') 70 repeat;
+    position: relative;
+    padding: 35px;
 }
 
-.orc-style .leaf-border>div {
-    margin: -35px;
+.orc-style .leaf-border::before {
+    content: "";
+    position: absolute;
+    margin: 0px;
     border: 90px solid;
-    border-image: url('../img/orc/corner0.gif') 180 repeat;
+    border-image: url('../img/orc/corner.gif') 180 repeat;
+    width: calc(100% + 70px);
+    height: calc(100% + 70px);
+    top: -35px;
+    left: -35px;
 }
 
 .orc-style .form-items {
@@ -217,12 +233,20 @@ h1 {
 .human-style .leaf-border {
     border: 35px solid;
     border-image: url('../img/human/border.gif') 70 repeat;
+    position: relative;
+    padding: 35px;
 }
 
-.human-style .leaf-border>div {
-    margin: -35px;
+.human-style .leaf-border::before {
+    content: "";
+    position: absolute;
+    margin: 0px;
     border: 90px solid;
     border-image: url('../img/human/corner.gif') 180 repeat;
+    width: calc(100% + 70px);
+    height: calc(100% + 70px);
+    top: -35px;
+    left: -35px;
 }
 
 .human-style .form-items {
