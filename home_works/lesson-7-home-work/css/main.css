@@ -1,4 +1,6 @@
-body {}
+body {
+    background-attachment: fixed;
+}
 
 * {
     padding: 0;
@@ -9,6 +11,11 @@ body {}
 
 .fon-music {
     display: none;
+}
+
+.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 section {
@@ -24,9 +31,9 @@ section {
 }
 
 .my-form {
-    max-width: 440px;
+    max-width: 640px;
     margin: -36px;
-    padding: 24px;
+    padding: 20px;
 }
 
 h1,
@@ -36,7 +43,7 @@ p {
 
 h1 {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 p {
@@ -120,6 +127,7 @@ h1 {
     height: auto;
     top: auto;
     padding: 0;
+    position: fixed;
 }
 
 .ne-style .select-style:hover,
