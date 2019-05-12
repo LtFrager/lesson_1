@@ -4,6 +4,11 @@ body {}
     padding: 0;
     margin: 0;
     transition: 1s;
+    font-family: 'FrizQuadrataTT';
+}
+
+.fon-music {
+    display: none;
 }
 
 section {
@@ -53,7 +58,7 @@ h1 {
     color: #E3CA71;
     text-align: center;
     font-size: 20px;
-    font-weight: 500;
+    /* font-weight: 500; */
     margin: 8px 0px;
     padding: 10px 8px 4px 8px;
     border-top: 3px solid #FFFF5A;
@@ -81,9 +86,47 @@ h1 {
     box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
     background: #fff;
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     margin: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+}
+
+.select-style:before {
+    content: ">";
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: -48px;
+    margin: 0;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.ne-style .select-style,
+.human-style .select-style,
+.orc-style .select-style,
+.undead-style .select-style {
+    bottom: 0;
+    left: 0%;
+    transform: translateX(-100%);
+    width: auto;
+    height: auto;
+    top: auto;
+    padding: 0;
+}
+
+.ne-style .select-style:hover,
+.human-style .select-style:hover,
+.orc-style .select-style:hover,
+.undead-style .select-style:hover {
+    transform: translateX(0%);
 }
 
 .select-style h2 {
@@ -109,6 +152,7 @@ h1 {
     padding: 4px 24px;
     margin: 12px;
     outline: none;
+    cursor: pointer;
 }
 
 .select-style button.style-change-btn.active {
