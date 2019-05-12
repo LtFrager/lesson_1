@@ -16,34 +16,7 @@
 
 <body class="style-change">
 
-    <ul class="fon-music">
-        <li>
-            <audio id="ne-audio" controls loop="true">
-                <source src="./music/ne.mp3" type="audio/mpeg">
-            </audio>
-        </li>
-        <li>
-            <audio id="human-audio" class="fon-music" controls loop="true">
-                <source src="./music/human.mp3" type="audio/mpeg">
-            </audio>
-        </li>
-        <li>
-            <audio id="orc-audio" class="fon-music" controls loop="true">
-                <source src="./music/orc.mp3" type="audio/mpeg">
-            </audio>
-
-        </li>
-        <li>
-            <audio id="undead-audio" class="fon-music" controls loop="true">
-                <source src="./music/undead.mp3" type="audio/mpeg">
-            </audio>
-        </li>
-    </ul>
-
-
-
     <section class="container">
-
         <div>
             <div class="leaf-border">
                 <form class="my-form">
@@ -61,26 +34,47 @@
                     <button disabled class="form-btn form-items">send</button>
                 </form>
             </div>
-
-            <div class="select-style">
-                <h2>
-                    Выбор стиля
-                    <hr style="margin: 8px 0px -12px;">
-                    <span>
-                        Нажми кнопку!)
-                    </span>
-                </h2>
-                <div>
-                    <button class="style-change-btn active" id="NE">NE</button>
-                    <button class="style-change-btn" id="Human">Human</button>
-                    <button class="style-change-btn" id="Orc">Orc</button>
-                    <button class="style-change-btn" id="Undead">Undead</button>
-                    <hr style="margin: 8px 0px -12px;">
-                    <button class="style-change-btn" id="disableSound">Disable sound</button>
-                </div>
-            </div>
         </div>
     </section>
+
+    <div class="select-style">
+        <h2>
+            Выбор стиля
+            <hr style="margin: 8px 0px -12px;">
+        </h2>
+        <div>
+            <button class="style-change-btn active" id="NE">NE</button>
+            <button class="style-change-btn" id="Human">Human</button>
+            <button class="style-change-btn" id="Orc">Orc</button>
+            <button class="style-change-btn" id="Undead">Undead</button>
+            <hr>
+            <button class="style-change-btn" id="disableSound">Pause sound</button>
+        </div>
+    </div>
+
+    <ul class="fon-music">
+        <li>
+            <audio id="ne-audio" controls loop="true">
+                    <source src="./music/ne.mp3" type="audio/mpeg">
+                </audio>
+        </li>
+        <li>
+            <audio id="human-audio" class="fon-music" controls loop="true">
+                    <source src="./music/human.mp3" type="audio/mpeg">
+                </audio>
+        </li>
+        <li>
+            <audio id="orc-audio" class="fon-music" controls loop="true">
+                    <source src="./music/orc.mp3" type="audio/mpeg">
+                </audio>
+
+        </li>
+        <li>
+            <audio id="undead-audio" class="fon-music" controls loop="true">
+                    <source src="./music/undead.mp3" type="audio/mpeg">
+                </audio>
+        </li>
+    </ul>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
