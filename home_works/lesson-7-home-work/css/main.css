@@ -99,6 +99,7 @@ h1 {
     z-index: 99;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .select-style:before {
@@ -128,6 +129,7 @@ h1 {
     top: auto;
     padding: 0;
     position: fixed;
+    overflow: visible;
 }
 
 .ne-style .select-style:hover,
