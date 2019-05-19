@@ -111,7 +111,7 @@ body {
     align-items: center;
     opacity: 0;
     animation: show 1s;
-    animation-delay: 10s;
+    animation-delay: 9.5s;
     animation-fill-mode: forwards;
 }
 
@@ -489,7 +489,7 @@ form button:hover {
     white-space: normal;
     opacity: 0;
     animation: show 1s;
-    animation-delay: 11s;
+    animation-delay: 10.5s;
     animation-fill-mode: forwards;
 }
 
