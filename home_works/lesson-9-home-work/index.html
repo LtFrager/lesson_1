@@ -17,25 +17,49 @@
 </head>
 
 <body>
-    <div class="before-bg "></div>
-
     <header>
         <nav>
             <ul class="nav-ul">
-                <li>
-                    <a href=""><img src="./img/nav-logo.png"></a>
+                <li class="nav-logo">
+                    <a class="lvl1-a" href="#"><img src="./img/nav-logo.png"></a>
                 </li>
-                <li>
-                    <a href="">text</a>
+                <li class="lvl1-li">
+                    <a class="lvl1-a" href="#">text</a>
                 </li>
-                <li>
-                    <a href="">text</a>
+                <li class="lvl1-li">
+                    <a class="lvl1-a" href="#">dropdown<img src="./img/baseline-arrow_drop_down-24px.svg"></a>
+                    <ul class="nav-ul-2lvl">
+                        <li class="lvl2-li">
+                            <a class="lvl2-a" href="#">text</a>
+                        </li>
+                        <li class="lvl2-li">
+                            <a class="lvl2-a" href="#">text</a>
+                        </li>
+                        <li class="lvl2-li">
+                            <a class="lvl2-a" href="#">text</a>
+                        </li>
+
+                    </ul>
                 </li>
-                <li>
-                    <a href="">text</a>
+                <li class="lvl1-li">
+                    <a class="lvl1-a" href="#">text</a>
                 </li>
-                <li>
-                    <a href="">text</a>
+                <li class="lvl1-li">
+                    <a class="lvl1-a" href="#">text</a>
+                </li>
+                <li class="lvl1-li">
+                    <a class="lvl1-a" href="#">dropdown<img src="./img/baseline-arrow_drop_down-24px.svg"></a>
+                    <ul class="nav-ul-2lvl">
+                        <li class="lvl2-li">
+                            <a class="lvl2-a" href="#">text</a>
+                        </li>
+                        <li class="lvl2-li">
+                            <a class="lvl2-a" href="#">text</a>
+                        </li>
+                        <li class="lvl2-li">
+                            <a class="lvl2-a" href="#">text</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </nav>
@@ -51,47 +75,62 @@
         </div>
     </div>
 
+    <div id="form-shadow" class="form-shadow" tabindex="-1">
+        <form id="my-form" class="my-form">
+            sadasd
+        </form>
+    </div>
+
+    <a href="#" class="call-btn modal-trigger" data-modal="modal-name">Modal open!</a>
+    <!-- Trigger Modal. -->
+
+    <!-- Modal -->
+    <div class="modal" id="modal-name">
+        <div class="modal-sandbox"></div>
+        <div class="modal-box">
+            <div class="card">
+                <h3 class="form-title">Обратная связь</h3>
+                <form>
+                    <div class="input_group">
+                        <input type="text" name="name" maxlength="40" placeholder="">
+                        <label for="name">имя</label>
+                        <div class="active-border"></div>
+                    </div>
+
+                    <div class="input_group">
+                        <input type="text" name="phone" maxlength="40" placeholder="">
+                        <label for="phone">телефон</label>
+                        <div class="active-border"></div>
+                    </div>
+
+                    <div class="input_group">
+                        <input type="email" name="email" maxlength="40" placeholder="">
+                        <label for="email">email</label>
+                        <div class="active-border"></div>
+                    </div>
+
+                    <div class="input_group">
+                        <textarea style="resize: none;" name="message" rows="6" maxlength="40" placeholder=""></textarea>
+                        <label for="message">сообщение</label>
+                        <div class="active-border" style="bottom: 6px;"></div>
+                    </div>
+
+                    <button class="button" id="btn" type="submit">Submit</button>
+
+                    <button class="close-modal">Close!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <style>
-        header {
-            position: fixed;
-            z-index: 99;
-        }
-        
-        .nav-ul {
-            display: flex;
-            list-style-type: none;
-            align-items: center;
-            letter-spacing: 1px;
-            padding: 20px;
-        }
-        
-        .nav-ul li {
-            padding: 12px 15px;
-            border-right: 2px solid rgba(255, 255, 255, 0.15);
-        }
-        
-        .nav-ul li:nth-child(1) {
-            padding: 0;
-            border: none;
-        }
-        
-        .nav-ul li:nth-child(1):hover {
-            filter: brightness(1.15);
-        }
-        
-        .nav-ul li a {
-            color: rgba(255, 255, 255, 0.7);
-            text-transform: uppercase;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        
-        .nav-ul li a:hover {
-            color: #fff;
-        }
+
     </style>
 
 
+    <video id="videobg" playsinline="" autoplay="true" loop="true" muted="muted" class="videobg">
+        <source src="./video/bg1.webm" type="video/webm">
+    </video>
     <div style="position: absolute;height: 100vh;width: 100%;left: 0;top: 0;z-index: 1;">
         <ul id="scene">
             <li class="layer" data-depth="0.1">

@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    autosize(document.querySelectorAll('textarea'));
 
     function checkForInput(element) {
         // element is passed to the function ^
