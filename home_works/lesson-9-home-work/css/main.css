@@ -16,7 +16,8 @@ body {
     transform: translate(-50%, -50%) scale(1.08);
     display: block;
     position: absolute;
-    animation: change-bg 6s;
+    animation: change-bg 10s;
+    animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     z-index: 2;
 }
@@ -36,9 +37,11 @@ body {
 @keyframes show {
     0% {
         opacity: 0;
+        transform: scale(0);
     }
     100% {
         opacity: 1;
+        transform: scale(1);
     }
 }
 
@@ -108,7 +111,7 @@ body {
     align-items: center;
     opacity: 0;
     animation: show 1s;
-    animation-delay: 6s;
+    animation-delay: 10s;
     animation-fill-mode: forwards;
 }
 
@@ -201,6 +204,26 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
+}
+
+.nav-ul .lvl1-li {
+    animation: show-nav 2s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@keyframes show-nav {
+    0% {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
 }
 
 .nav-ul .lvl1-li:hover .lvl1-a,
@@ -466,7 +489,7 @@ form button:hover {
     white-space: normal;
     opacity: 0;
     animation: show 1s;
-    animation-delay: 6s;
+    animation-delay: 11s;
     animation-fill-mode: forwards;
 }
 
