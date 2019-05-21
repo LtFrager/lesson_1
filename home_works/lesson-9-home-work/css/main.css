@@ -1,13 +1,20 @@
 body {
     width: 100%;
     height: 100vh;
-    overflow: hidden;
-    background: #FCD15D;
+    /* overflow: hidden; */
 }
 
 .videobg {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.videobg video {
     min-width: 100%;
-    /* height: 100%; */
     min-height: 100vh;
     top: 50%;
     right: 50%;
@@ -42,6 +49,22 @@ body {
     100% {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+.parallax-bg {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+    .parallax-bg {
+        display: none;
     }
 }
 
@@ -87,21 +110,18 @@ body {
     background-image: url('../img/top.png');
 }
 
-.layer4 {
-    /* background-image: ; */
-}
-
 
 /* background end */
 
 .content {
-    z-index: 3;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
+    background: url('../img/bg.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 .heading {
@@ -113,6 +133,8 @@ body {
     animation: show 1s;
     animation-delay: 9.5s;
     animation-fill-mode: forwards;
+    z-index: 3;
+    position: relative;
 }
 
 .heading img {

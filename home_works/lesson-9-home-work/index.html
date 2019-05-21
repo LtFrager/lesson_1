@@ -64,7 +64,7 @@
         </nav>
     </header>
 
-    <div class="content">
+    <section class="content">
         <div class="heading">
             <img src="./img/war-ref-logo.png">
             <h1 class="heading-title">
@@ -72,7 +72,29 @@
             </h1>
             <button class="order-button">Стильная кнопка</button>
         </div>
-    </div>
+
+
+        <!-- Видео в начале -->
+        <div class="videobg">
+            <video id="videobg" loop="true" muted="muted">
+                <source src="./video/bg1.webm" type="video/webm">
+            </video>
+        </div>
+        <!-- Параллакс после видео -->
+        <div class="parallax-bg">
+            <ul id="scene">
+                <li class="layer" data-depth="0.1">
+                    <div class="layer1"></div>
+                </li>
+                <li class="layer" data-depth="0.2">
+                    <div class="layer2"></div>
+                </li>
+                <li class="layer" data-depth="0.3">
+                    <div class="layer3"></div>
+                </li>
+            </ul>
+        </div>
+    </section>
 
     <a href="#" class="call-btn modal-trigger" data-modal="modal-name">Modal open!</a>
     <!-- Trigger Modal. -->
@@ -115,31 +137,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Видео в начале -->
-    <video id="videobg" playsinline="" autoplay="true" loop="true" muted="muted" class="videobg">
-        <source src="./video/bg1.webm" type="video/webm">
-    </video>
-
-    <!-- Параллакс после видео -->
-    <div style="position: absolute;height: 100vh;width: 100%;left: 0;top: 0;z-index: 1;">
-        <ul id="scene">
-            <li class="layer" data-depth="0.1">
-                <div class="layer1"></div>
-            </li>
-            <li class="layer" data-depth="0.2">
-                <div class="layer2"></div>
-            </li>
-            <li class="layer" data-depth="0.3">
-                <div class="layer3"></div>
-            </li>
-            <li class="layer" data-depth="0.4">
-                <div class="layer4"></div>
-            </li>
-        </ul>
-    </div>
-
-
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
