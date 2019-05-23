@@ -156,6 +156,13 @@ header nav a:hover {
     background-image: url('http://rus.live/wp-content/uploads/2018/12/%D1%81%D0%BF%D0%BE%D1%80%D1%82-2.jpg');
 }
 
+.owl-theme .owl-nav.disabled+.owl-dots {
+    transform: rotate(90deg);
+    transform-origin: top right;
+    margin: 0 16px;
+    background: transparent;
+}
+
 
 /* dz section */
 
