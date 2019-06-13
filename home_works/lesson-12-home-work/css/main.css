@@ -1,0 +1,98 @@
+body {
+    margin: 0px;
+}
+
+.mycontainer {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background: white;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.mycontainer .slide {
+    height: 100%;
+    background: black;
+    top: 0%;
+    left: -5%;
+    -webkit-animation: slide 2s ease-out infinite;
+}
+
+@-webkit-keyframes slide {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+h1 {
+    font-family: 'Fjalla One', sans- serif;
+    font-weight: 400;
+    font-size: 36px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -90%);
+    text-transform: uppercase;
+    mix-blend-mode: difference;
+    /*   transition:all .5s; */
+}
+
+.char {
+    bottom: 16px;
+    border: 1px solid;
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    overflow: hidden;
+    display: inline-block;
+    background: url("https://img2.freepng.ru/20180427/xvw/kisspng-animation-sprite-cascading-style-sheets-walk-cycle-5ae2da73e7c1b6.1481903415248164999493.jpg");
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.moveLeft {
+    animation: moveLeft 1s infinite steps(6);
+}
+
+.moveRight {
+    animation: moveRight 1s infinite steps(6) reverse;
+}
+
+.stayLeft {
+    background-position-y: -302px;
+    background-position-x: -250px;
+}
+
+.stayRight {
+    background-position-y: -302px;
+    background-position-x: -150px;
+}
+
+@keyframes moveLeft {
+    from {
+        background-position-y: 0px;
+        background-position-x: -140px;
+    }
+    to {
+        background-position-y: 0px;
+        background-position-x: -760px;
+    }
+}
+
+@keyframes moveRight {
+    from {
+        background-position-y: -150px;
+        background-position-x: -760px;
+    }
+    to {
+        background-position-y: -150px;
+        background-position-x: -140px;
+    }
+}

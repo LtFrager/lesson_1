@@ -1,0 +1,9 @@
+User-agent:*
+Disallow:/contacs.html
+
+
+User-agent: Googlebot
+Allow:/about-company.html
+
+
+Sitemap: http://domain/sitemap.xml.

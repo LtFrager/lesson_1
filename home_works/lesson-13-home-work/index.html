@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Material Icons  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="shadow">
+    </div>
+    <video id="videobg" loop="true" muted="muted">
+        <source src="./video/bg.mp4" type="video/mp4">
+        <source src="./video/bg.webm" type="video/webm">
+        <source src="./video/bg.ogv" type="video/ogv">
+    </video>
+
+    <div class="container">
+
+        <div class="card" style="min-width: 540px;">
+            <h3 class="form-title">My form</h3>
+
+            <form id="ajax_form" method="post" action="" enctype="multipart/form-data">
+
+                <div class="input_group">
+                    <input type="text" name="name" maxlength="40" placeholder="">
+                    <label for="name">имя</label>
+                    <div class="active-border"></div>
+                </div>
+
+                <div class="input_group">
+                    <input type="text" name="phone" maxlength="40" placeholder="">
+                    <label for="phone">телефон</label>
+                    <div class="active-border"></div>
+                </div>
+
+                <div class="input_group">
+                    <input type="email" name="email" maxlength="40" placeholder="">
+                    <label for="email">email</label>
+                    <div class="active-border"></div>
+                </div>
+
+                <div class="input_group">
+                    <textarea style="resize: none;" name="message" rows="2" maxlength="40" placeholder=""></textarea>
+                    <label for="message">сообщение</label>
+                    <div class="active-border" style="bottom: 6px;"></div>
+                </div>
+
+                <div class="padding">
+                    <input type="file" name="1image">
+                    <label for="image">выбрать файл</label>
+                </div>
+
+                <div class="padding">
+                    <select name="select">
+                        <option disabled selected>Выберите героя</option>
+                        <option value="Чебурашка">Чебурашка</option>
+                        <option value="Крокодил Гена">Крокодил Гена</option>
+                        <option value="Шапокляк">Шапокляк</option>
+                    </select>
+                </div>
+
+                <div class="ridiobuttons padding">
+                    <label>
+                        <input name="myradio" type="radio" value="radio1">radio1
+                    </label>
+                    <label>
+                        <input name="myradio" type="radio" value="radio2">radio2
+                    </label>
+                    <label>
+                        <input name="myradio" type="radio" value="radio3">radio3
+                    </label>
+                </div>
+                <hr>
+
+                <button class="button" id="btn" type="submit"> submit</button>
+            </form>
+        </div>
+    </div>
+    <style>
+        .container {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .shadow {
+            background: rgba(0, 0, 0, .4);
+            z-index: 1;
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+        }
+        
+        video {
+            position: fixed;
+            height: 100vh;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%) scale(1.15);
+        }
+    </style>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="./js/autosize.min.js"></script>
+    <script type="text/javascript" src="./js/js.js"></script>
+
+    <script>
+    </script>
+</body>
+
+</html>

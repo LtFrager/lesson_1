@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background: #fafafa;
+}
+
+header nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+header nav .nav-ul {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    width: 600px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav .nav-ul::after {
+    display: block;
+    position: absolute;
+    left: 99.7%;
+    top: 0;
+    content: "";
+    height: 100%;
+    width: 40%;
+    background: rgba(255, 255, 255, 1);
+    clip-path: polygon(70% 0, 56% 35%, 67% 75%, 50% 82%, 21% 60%, 0% 100%, 0% 0%, 0% 0%);
+}
+
+header nav .nav-ul:before {
+    display: block;
+    position: absolute;
+    left: -40%;
+    top: 0;
+    content: "";
+    height: 100%;
+    width: 40%;
+    background: rgba(255, 255, 255, 1);
+    clip-path: polygon(100% 0, 100% 100%, 82% 75%, 50% 82%, 48% 42%, 0 -50%, 18% 29%, 24% 0);
+}
+
+header nav .nav-ul .nav-li {
+    display: inline-block;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 -1px;
+    text-align: center;
+    background: rgba(255, 255, 255, 1);
+    font-size: 21px;
+    clip-path: polygon(100% 0, 100% 100%, 70% 100%, 50% 100%, 30% 100%, 0 100%, 0 0, 30% 0);
+    transition: all .3s;
+}
+
+header nav .nav-ul .nav-li:hover {
+    clip-path: polygon(100% 0, 100% 100%, 70% 100%, 50% 80%, 30% 100%, 0 100%, 0 0, 30% 0);
+    transition: all .3s;
+}
+
+header nav a {
+    padding: 26px 0;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+header nav a:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* slider */
+
+.my-slider .item .text-container {
+    position: absolute;
+    max-width: 540px;
+    left: 10%;
+    top: 33%;
+    transform: translate( 0%, 33%);
+    color: white;
+    clip-path: polygon(6% 36%, 8% 4%, 43% 0, 57% 21%, 79% 18%, 98% 51%, 81% 74%, 83% 98%, 56% 85%, 40% 100%, 8% 100%, 0 72%);
+    background: rgba(255, 255, 255, .85);
+    padding: 0px 28px 20px 44px;
+}
+
+.my-slider .item .text-container h2 {
+    font-size: 6vh;
+    margin: 0;
+    padding-left: 0px;
+    color: #161616;
+    max-width: 90%;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.my-slider .item .text-container p {
+    font-size: 2vh;
+    margin-left: -16px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    padding-right: 20px;
+    transform: rotate(-5deg);
+    max-height: 100px;
+    color: #161616;
+}
+
+.my-slider .item .text-container a {
+    padding: 10px 20px;
+    background: #161616;
+    display: inline-block;
+    margin-left: 33px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+.my-slider .item .text-container a:hover {
+    text-decoration: none;
+}
+
+.my-slider {
+    background: #161616;
+    clip-path: polygon(9% 98%, 0 100%, 0 0, 100% 0, 100% 100%, 85% 92%, 75% 100%, 64% 91%, 56% 96%, 40% 98%, 24% 92%);
+}
+
+.my-slider .item {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.sl1 {
+    background-image: url('http://musclefit.info/wp-content/uploads/2011/11/xTrenirovka-silyi-udara.jpg.pagespeed.ic.goKdRFeRIc.jpg');
+}
+
+.sl2 {
+    background-image: url('http://body.com.ua/images/trainings/ee125e_6521b4a68c4e46659f0aa1a20e3f8988.jpg');
+}
+
+.sl3 {
+    background-image: url('http://rus.live/wp-content/uploads/2018/12/%D1%81%D0%BF%D0%BE%D1%80%D1%82-2.jpg');
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    transform: rotate(90deg);
+    transform-origin: top right;
+    margin: 0 16px;
+    background: transparent;
+}
+
+
+/* dz section */
+
+.dz2 {
+    padding: 24px;
+}
+
+.dz2 h2 {
+    font-size: 32px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.my-card {
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    background: white;
+}
+
+.my-card-title {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
+    background-color: #f5f5f5;
+    color: rgba(0, 0, 0, 0.87);
+    padding: 10px;
+    font-size: 18px;
+}
+
+.my-card-body {
+    padding: 20px;
+}
+
+.text-1-1 {
+    color: #333;
+    text-shadow: 1px 1px 6px #feaaee, 3px 3px 2px #333;
+}
+
+.text-1-2 {
+    color: #FF190B;
+    text-shadow: 4px 4px 6px rgba(255, 255, 255, .21), 4px 3px 1px #FFaaaa, 1px 1px 5px #333;
+}
+
+.text-1-3 {
+    color: #FF190B;
+    text-shadow: 1px 3px 1px #123, 1px 13px 5px #aba8a8, 4px 4px 6px rgba(255, 255, 255, .21), 4px 10px 3px #FFaaaa, -3px -3px 3px #333;
+}
+
+.box-2-1 {
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    transition: .5s;
+    border: 1px solid;
+    width: 100px;
+    cursor: pointer;
+}
+
+.box-2-1:hover {
+    box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+    transition: .5s;
+    width: 100px;
+    border: 1px solid;
+    outline: none;
+}
+
+.box-2-2 {
+    width: 200px;
+    height: 100px;
+    background: #fafafa;
+    box-shadow: inset 0px 3px 1px -2px rgba(0, 0, 0, 0.2), inset 0px 2px 2px 0px rgba(0, 0, 0, 0.14), inset 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.box-2-3 {
+    width: 200px;
+    height: 100px;
+    background: #fafafa;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}

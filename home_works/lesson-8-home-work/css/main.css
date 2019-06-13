@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.bg {
+    background: url('../img/bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg:before {
+    position: absolute;
+    content: "";
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.my-fix {
+    position: relative;
+    z-index: 20;
+    min-height: 100vh;
+}
+
+
+/* vertical text */
+
+.bg-text {
+    width: fit-content;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    top: 45px;
+    ;
+}
+
+.bg-text div {
+    font-size: 36vh;
+    color: #F6B648;
+    transform: rotate(90deg) translateX(30%);
+    position: relative;
+    left: 25%;
+    width: max-content;
+    line-height: 40vh;
+    font-weight: bold;
+}
+
+.bg-text span {
+    color: #fff;
+    font-size: 4vh;
+    position: absolute;
+    right: -5%;
+    bottom: 10%;
+    line-height: 5vh;
+}
+
+
+/* navigation */
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 4%;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    list-style: none;
+}
+
+.navigation li {
+    margin: 20px;
+}
+
+.navigation li a {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 16px 0;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    border-bottom: 2px solid;
+    box-sizing: border-box;
+}
+
+.navigation li button {
+    background: none;
+    border: none;
+    outline: none;
+    color: #F6B648;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* content */
+
+.promo-text {
+    max-width: 60%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 6vh 2vw 8vh 5vw;
+    z-index: 2;
+}
+
+.promo-text h1 {
+    font-size: 10vh;
+    font-weight: 100;
+}
+
+.promo-text p {
+    font-size: 22px;
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+.promo-text button {
+    background: #F6B648;
+    border: none;
+    border-radius: 50px;
+    padding: 14px 40px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.promo-text button:active,
+.promo-text button:focus {
+    outline: none;
+}
