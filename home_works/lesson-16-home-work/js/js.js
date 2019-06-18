@@ -27,6 +27,13 @@ $(document).ready(function() {
         // draggable: false,
 
         responsive: [{
+                breakpoint: 1264,
+                settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 3,
+                }
+            },
+            {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
